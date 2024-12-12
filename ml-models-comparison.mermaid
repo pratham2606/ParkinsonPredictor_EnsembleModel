@@ -1,0 +1,56 @@
+graph TB
+    subgraph Overview[ML Models Performance Comparison]
+        A[Support Vector Machine]
+        B[K-Nearest Neighbors]
+        C[Naive Bayes]
+        D[Decision Tree]
+        E[Random Forest]
+        F[Logistic Regression]
+    end
+
+    subgraph SVM[SVM Metrics]
+        A --> A1[Training: 89.10%]
+        A --> A2[Testing: 89.74%]
+        A --> A3[ROC-AUC: 0.85]
+        A --> A4[F1: 0.77]
+    end
+
+    subgraph KNN[KNN Metrics]
+        B --> B1[Training: 94.87%]
+        B --> B2[Testing: 94.87%]
+        B --> B3[ROC-AUC: 0.98]
+        B --> B4[F1: 0.90]
+    end
+
+    subgraph NB[Naive Bayes Metrics]
+        C --> C1[Training: 69.87%]
+        C --> C2[Testing: 71.79%]
+        C --> C3[ROC-AUC: 0.77]
+        C --> C4[F1: 0.62]
+    end
+
+    subgraph DT[Decision Tree Metrics]
+        D --> D1[Training: 100.00%]
+        D --> D2[Testing: 92.31%]
+        D --> D3[ROC-AUC: 0.84]
+        D --> D4[F1: 0.86]
+    end
+
+    subgraph RF[Random Forest Metrics]
+        E --> E1[Training: 100.00%]
+        E --> E2[Testing: 94.87%]
+        E --> E3[ROC-AUC: 0.95]
+        E --> E4[F1: 0.90]
+    end
+
+    subgraph LR[Logistic Regression Metrics]
+        F --> F1[Training: 86.54%]
+        F --> F2[Testing: 89.74%]
+        F --> F3[ROC-AUC: 0.83]
+        F --> F4[F1: 0.77]
+    end
+
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef metrics fill:#e1f5fe,stroke:#333,stroke-width:1px;
+    class A,B,C,D,E,F default;
+    class A1,A2,A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 metrics;

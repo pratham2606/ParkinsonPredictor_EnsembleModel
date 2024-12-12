@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold">Machine Learning Models Comparison</text>
+    
+    <!-- Background rectangles for each model -->
+    <rect x="50" y="50" width="220" height="80" fill="#f0f0f0" rx="5"/>
+    <rect x="290" y="50" width="220" height="80" fill="#f0f0f0" rx="5"/>
+    <rect x="530" y="50" width="220" height="80" fill="#f0f0f0" rx="5"/>
+    <rect x="50" y="150" width="220" height="80" fill="#f0f0f0" rx="5"/>
+    <rect x="290" y="150" width="220" height="80" fill="#f0f0f0" rx="5"/>
+    <rect x="530" y="150" width="220" height="80" fill="#f0f0f0" rx="5"/>
+
+    <!-- SVM -->
+    <text x="160" y="70" text-anchor="middle" font-weight="bold">SVM</text>
+    <text x="160" y="90" text-anchor="middle" font-size="12">Train: 89.10% Test: 89.74%</text>
+    <text x="160" y="110" text-anchor="middle" font-size="12">ROC-AUC: 0.85 F1: 0.77</text>
+
+    <!-- KNN -->
+    <text x="400" y="70" text-anchor="middle" font-weight="bold">KNN</text>
+    <text x="400" y="90" text-anchor="middle" font-size="12">Train: 94.87% Test: 94.87%</text>
+    <text x="400" y="110" text-anchor="middle" font-size="12">ROC-AUC: 0.98 F1: 0.90</text>
+
+    <!-- Naive Bayes -->
+    <text x="640" y="70" text-anchor="middle" font-weight="bold">Naive Bayes</text>
+    <text x="640" y="90" text-anchor="middle" font-size="12">Train: 69.87% Test: 71.79%</text>
+    <text x="640" y="110" text-anchor="middle" font-size="12">ROC-AUC: 0.77 F1: 0.62</text>
+
+    <!-- Decision Tree -->
+    <text x="160" y="170" text-anchor="middle" font-weight="bold">Decision Tree</text>
+    <text x="160" y="190" text-anchor="middle" font-size="12">Train: 100% Test: 92.31%</text>
+    <text x="160" y="210" text-anchor="middle" font-size="12">ROC-AUC: 0.84 F1: 0.86</text>
+
+    <!-- Random Forest -->
+    <text x="400" y="170" text-anchor="middle" font-weight="bold">Random Forest</text>
+    <text x="400" y="190" text-anchor="middle" font-size="12">Train: 100% Test: 94.87%</text>
+    <text x="400" y="210" text-anchor="middle" font-size="12">ROC-AUC: 0.95 F1: 0.90</text>
+
+    <!-- Logistic Regression -->
+    <text x="640" y="170" text-anchor="middle" font-weight="bold">Logistic Regression</text>
+    <text x="640" y="190" text-anchor="middle" font-size="12">Train: 86.54% Test: 89.74%</text>
+    <text x="640" y="210" text-anchor="middle" font-size="12">ROC-AUC: 0.83 F1: 0.77</text>
+
+    <!-- Performance Scale -->
+    <text x="400" y="280" text-anchor="middle" font-weight="bold">Performance Scale</text>
+    <rect x="250" y="300" width="300" height="30" fill="url(#gradient)"/>
+    <text x="250" y="350" text-anchor="middle" font-size="12">Lower</text>
+    <text x="550" y="350" text-anchor="middle" font-size="12">Higher</text>
+
+    <!-- Gradient definition -->
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ff9999;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#ffff99;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#99ff99;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+</svg>
